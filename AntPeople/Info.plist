@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>回收人</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,13 +17,49 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.2.6</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>WeChat</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx14aa2b1709248742</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>61</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>“回收人”需要使用相机来完成图片拍摄</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>"回收人"会在接单等服务中使用你的位置信息。</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>“回收人”会在接单等服务中使用你的位置信息。</string>
+	<key>NSLocationUsageDescription</key>
+	<string>永不允许“回收人”在接单等服务中访问位置信息。</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>使用应用期间允许“回收人”在接单服务中访问位置信息。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>“回收人”需要使用相册来完成图片选择</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>“回收人”需要使用相册来完成图片选择</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>“回收人”需要使用相册来完成图片选择</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -31,8 +69,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
