@@ -30,6 +30,9 @@ static NSString * chanel = @"App Store";
 
 @end
 
+
+
+
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
